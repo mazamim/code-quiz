@@ -2,6 +2,18 @@ header{
     display: flex;
     justify-content: space-between;
 }
+header a{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+header a:hover{
+    border: 1px solid orchid;
+    border-radius: 5px 2px 2px 5px;
+    cursor: pointer;
+    background-color: orchid;
+    
+}
 body{
     font-family: "Quicksand",sans-serif;
     margin: 0;
@@ -64,6 +76,12 @@ display: none;
 font-size: 24px;
 padding: 10px;
 }
+#sumbitButton{
+    height: 2rem;
+    width: 8rem;
+}
+
+
 #answerStatus,#correctAnswer{
     padding-bottom: 5px;
     border-bottom: 3px solid rgb(224, 17, 207);
@@ -73,9 +91,8 @@ padding: 10px;
 }
 
 
-input[type=text]:focus {
-    background-color: lightblue;
-  }
+
+
 
 
   #wrapper-4{
@@ -84,6 +101,39 @@ display: none;
 text-align: center;
 
   } 
+  
+#wrapper-4 a{
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 25px;
+    
+}
+
+#wrapper-4 h2{
+    padding: 20px;
+  
+    margin: 25px;
+}
+input[type=text]{
+    height: 2rem; 
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 25px;
+   
+  }
+  input[type=text]:focus {
+    background-color: rgb(224, 17, 207);
+  }
+
+  #sumbitButton{
+    height: 2rem;
+    width: 8rem;
+    border-radius:25px;
+}
+#sumbitButton:hover{
+ background-color: rgb(224, 17, 207);
+}
+
   #list-items{
 
       margin: 0 auto;
@@ -95,8 +145,3 @@ text-align: center;
     list-style-type:none;
 }
 
-#wrapper-4 a{
-    padding: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    margin-right: 25px;
-}

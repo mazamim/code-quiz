@@ -19,7 +19,7 @@ var startButton=document.getElementById("press");
 var timerElement=document.getElementById("timer");
 var timeDiv=document.getElementById("time");
 var clear=document.getElementById("clear");
-var back=document.getElementById("back");
+var viewHigh=document.getElementById("viewHigh");
 
 //question and answers
 var answers = document.getElementById("answers");
@@ -156,7 +156,7 @@ correctAnswer:'<script>'
 
    
     displayMessage.setAttribute("style","display:none")
-    }, 1000); 
+    }, 2000); 
  
   })
 
@@ -266,8 +266,17 @@ correctAnswer:'<script>'
 
   clear.addEventListener('click',()=>{
     localStorage.clear();
-    
+    highScores=[];
+    list.remove();
   })
+
+  viewHigh.addEventListener('click',()=>{
+    removeWrapper(wrapper1);
+    removeWrapper(wrapper2);
+    removeWrapper(wrapper3);
+    showWrapper(wrapper4);
+  });
+
 
 
 
