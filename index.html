@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header>
+ <header id="header">
     <div id="view">
         <a>View Highscores</a>
 
@@ -44,7 +44,34 @@
 <hr>
 <h3 id="displayMessage">Answer is <span id="answerStatus">Wrong</span> correct answer is <span id="correctAnswer">Answer 4</span></h3>
     </div>
+
+    <div id="wrapper-3">
+        <h2>All Done!</h2>
+        <p>Your final score is <span id="finalScore">0</span></p>
+        <div id="initial">
+            <form id="initialForm" method="POST">
+                <label for="initial">Enter initials</label>
+                <input type="text" id="initialInput" name="initial">
+               
+                <input id="sumbitButton" type="submit" value="Submit">
+              </form>
+        </div>
+    </div>
+
+    <div id="wrapper-4">
+    <h2>Highscores</h2>
+    <div id="list-items">
+       <ul id="list">
+        
+    </ul>  
+    </div>
+    <a id="back">Back</a><a id="clear">Clear Highscores</a>
 </div>
+
+
+
+</div>
+
  </main>
 <script src="script.js"></script>
 </body>

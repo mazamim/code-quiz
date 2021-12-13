@@ -56,7 +56,7 @@ body{
     transition: opacity 2s linear;
   }
 
-#wrapper-2{
+#wrapper-2,#wrapper-3{
 text-align: left;
 display: none;
 }
@@ -72,4 +72,31 @@ padding: 10px;
     display: none;
 }
 
-    
+
+input[type=text]:focus {
+    background-color: lightblue;
+  }
+
+
+  #wrapper-4{
+padding: 10px;
+display: none;
+text-align: center;
+
+  } 
+  #list-items{
+
+      margin: 0 auto;
+  }
+
+#wrapper-4 ul li{
+    text-align: center;
+    padding: 10px;
+    list-style-type:none;
+}
+
+#wrapper-4 a{
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 25px;
+}
